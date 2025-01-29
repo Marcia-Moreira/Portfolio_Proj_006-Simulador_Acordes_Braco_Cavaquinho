@@ -1,0 +1,121 @@
+/* teste: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* Fixa à Direita: */
+    position: fixed;
+    right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-left: 3px solid #53320f;
+    border-right: 3px solid #53320f;
+}
+h4 {
+    color: #fff;
+    text-align: center;
+}
+#img-mao {
+    background-color: rgb(91, 46, 1);
+    max-width: 300px;
+    min-width: 250px;
+    height: 50px;
+    padding-top: 5px;
+}
+.cavaquinho-braco {
+    background-color: #e59a21;
+    color: #53320f;
+    padding-top: 5px;
+}
+.nomeNota {
+    padding-top: 5px;
+    font-weight: 700;
+}
+.container-nomeNota {
+    display: grid;
+    grid-template-columns: 32px 30px 28px 26px;
+    row-gap: 0px;
+    column-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.container-braco {
+    background-color: #b57129;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    display: grid;
+    /* Largura Tamanho da mão: */
+    max-width: 300px;
+    min-width: 250px;
+    /* Comprimento do braço: */
+    min-height: 250px;
+}
+.container-linha {
+    display: grid;
+    grid-template-columns: 32px 30px 28px 26px;
+    /* grid-template-rows: 20px 18px 16px 14px; */
+    row-gap: 0px;
+    column-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+/* Cordas do Cavaquinho: */
+.item-braco {
+    background-color: rgb(91, 46, 1);
+    text-align: center;
+    width: 30px;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 2px;
+}
+/* ALTURA DAS CASAS: */
+.l1 {
+    height: 80px;
+}
+.l2 {
+    height: 75px;
+}
+.l3 {
+    height: 70px;
+}
+.l4 {
+    height: 65px;
+}
+.l5 {
+    height: 60px;
+}
+.l6 {
+    height: 55px;
+}
+/* LARGURA DAS CORDAS: */
+.c1 {
+    width: 10px;
+}
+.c2 {
+    width: 12px;
+}
+.c3 {
+    width: 14px;
+}
+.c4 {
+    width: 16px;
+}
+/* Trastes: */
+.linha1,
+.linha2,
+.linha3,
+.linha4,
+.linha5,
+.linha6 {
+    border: 1px solid #e59a21;
+    border-top: 2px solid #C5A880;
+    border-bottom: 2px solid #C5A880;
+}
+
+.cavaquinho-corpo {
+    background-color: #e59a21;
+}
