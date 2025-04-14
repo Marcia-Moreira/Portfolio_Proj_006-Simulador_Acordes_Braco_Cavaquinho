@@ -1,4 +1,3 @@
-/* teste: */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +5,8 @@
 }
 body {
     /* Fixa à Direita: */
+    background-color: #C5A880;
+    background-color: #fcefde;
     position: fixed;
     right: 0;
     margin-right: 10px;
@@ -14,15 +15,56 @@ body {
     border-right: 3px solid #53320f;
 }
 h4 {
-    color: #fff;
+    color: #d9d5d5;
     text-align: center;
 }
+/* Para Rótulos Não Clicáveis: */
+.nao-clicavel {
+    pointer-events: none !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+}
+/* Ver Codigo JS para Button: */
+button {
+    background-color: #b57129;
+    /* background-color: #a05c14; */
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid #53320f;
+    min-width: 120px;
+    max-width: 145px;
+}
+/* TESTE de Trava: */
+/* body[style*="overflow: hidden"] {
+    outline: 5px solid red !important;
+} */
 #img-mao {
     background-color: rgb(91, 46, 1);
     max-width: 300px;
     min-width: 250px;
-    height: 50px;
+    height: 70px;
     padding-top: 5px;
+}
+.container-enfeite {
+    display: flex;
+    justify-content: space-around;
+    /* Fallback para navegadores antigos */
+    margin-top: 5px;
+    /* Moderno (suaviza movimento) */
+    transform: translateY(5px);
+}
+span.enfeite {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* background-color: #c1ac8e; */
+    background-color: #b57129;
+    border: 2px solid #53320f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 0;
+    margin-right: 0;
 }
 .cavaquinho-braco {
     background-color: #e59a21;
@@ -44,8 +86,6 @@ h4 {
 }
 .container-braco {
     background-color: #b57129;
-    /* padding: 10px; */
-    /* margin: 10px; */
     display: grid;
     /* Largura Tamanho da mão: */
     max-width: 300px;
@@ -65,44 +105,57 @@ h4 {
 }
 /* Cordas do Cavaquinho: */
 .item-braco {
-    background-color: rgb(91, 46, 1);
+    background-color: rgba(91, 46, 1, 0.921);
+    align-items: center;
+    justify-items: center;
     text-align: center;
-    width: 30px;
-    color: #fff;
-    font-size: 12px;
     padding-top: 2px;
+}
+/* Números dentro das cordas: */
+.item-braco span {
+    font-size: 12px;
+    color: #beb078;
 }
 /* ALTURA DAS CASAS: */
 .l1 {
-    height: 80px;
+    height: 86px;
 }
 .l2 {
-    height: 75px;
+    height: 74px;
 }
 .l3 {
-    height: 70px;
+    height: 72px;
 }
 .l4 {
-    height: 65px;
+    height: 70px;
 }
 .l5 {
-    height: 60px;
+    height: 68px;
 }
 .l6 {
-    height: 55px;
+    height: 66px;
+}
+.l7 {
+    height: 64px;
+}
+.l8 {
+    height: 62px;
+}
+.l9 {
+    height: 60px;
 }
 /* LARGURA DAS CORDAS: */
 .c1 {
     width: 10px;
 }
 .c2 {
-    width: 12px;
+    width: 11px;
 }
 .c3 {
-    width: 14px;
+    width: 12px;
 }
 .c4 {
-    width: 16px;
+    width: 13px;
 }
 /* Trastes: */
 .linha1,
@@ -110,12 +163,14 @@ h4 {
 .linha3,
 .linha4,
 .linha5,
-.linha6 {
+.linha6,
+.linha7,
+.linha8,
+.linha9 {
     border: 1px solid #e59a21;
     border-top: 2px solid #C5A880;
     border-bottom: 2px solid #C5A880;
 }
-
 .cavaquinho-corpo {
     background-color: #e59a21;
 }
